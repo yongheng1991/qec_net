@@ -12,7 +12,7 @@ This repository contains the implementation of our [ECCV 2020 paper *Quaternion 
 
 For an intuitive explanation of the QEC-Net, please check out [ECCV oral presentation](to be added).
 
-![](https://github.com/yongheng1991/3D-point-capsule-networks/blob/master/docs/teaser.png )
+![](https://github.com/yongheng1991/qec_net/blob/master/docs/teaser.png )
 
 
 
@@ -22,6 +22,15 @@ We present a 3D capsule module for processing point clouds that is equivariant t
 ### Citation
 If you find our work useful in your research, please consider citing:
 		  
+
+		  
+		  @article{zhao2019quaternion,
+			title={Quaternion Equivariant Capsule Networks for 3D Point Clouds},
+			author={Zhao, Yongheng and Birdal, Tolga and Lenssen, Jan Eric and Menegatti, Emanuele and Guibas, Leonidas and Tombari, Federico},
+			journal={arXiv preprint arXiv:1912.12098},
+			year={2019}
+		  },
+		  
 		  @inproceedings{zhao20193d, 
 			author={Zhao, Yongheng and Birdal, Tolga and Deng, Haowen and Tombari, Federico}, 
 			booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)}, 
@@ -29,20 +38,11 @@ If you find our work useful in your research, please consider citing:
 			Capsule Networks}, 
 			organizer={IEEE/CVF},
 			year={2019}
-		  },
-		  
-        @article{zhao2019quaternion,
-          title={Quaternion Equivariant Capsule Networks for 3D Point Clouds},
-          author={Zhao, Yongheng and Birdal, Tolga and Lenssen, Jan Eric and Menegatti, Emanuele and Guibas, Leonidas and Tombari, Federico},
-          journal={arXiv preprint arXiv:1912.12098},
-          year={2019}
-        }
+		  }		  
 
 ### Installation
 
-The code is based on PyTorch. It has been tested with Python 3.6+, PyTorch 1.1.0, CUDA 10.0(or higher) on Ubuntu 18.04.
-
-We suggest the users to buld the environment with anaconda. 
+The code is based on PyTorch. It has been tested with Python 3.6+, PyTorch 1.1.0, CUDA 10.0(or higher) on Ubuntu 18.04. We suggest the users to build the environment with anaconda. 
  
 Install batch-wise eigenvalue decomposition package:
 ```bash
@@ -51,7 +51,6 @@ Install batch-wise eigenvalue decomposition package:
   cd ../models/pytorch-autograd-solver
   python setup.py install
 ```
-
 (Be aware of installing pytorch-cusolver before 'pytorch-autograd-solver')
 
 
@@ -117,6 +116,17 @@ add Jan's repo
 add 3d point cpas repo
 
 
+
+### To do
+1. Add more detials of the experiment 
+2. Add the dataset and pre-trained model with google drive link.
+3. Add more experiment
+4. refine the code, remove useless denpendencies, rename the varables corresponding to the paper.
+5. Add more comment in the code
+6. Add code reference in Readme.
+7. Add more animations
+8. Test the final version
+...
 
 
 
